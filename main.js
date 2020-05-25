@@ -44,7 +44,7 @@ $('#contact').click(function(){ //scrolls to the about section
 //scrolling behavirour
 $('#mainBtn, #mainBtnMob').click(function(){ //scrolls to the about section
     $('html').animate({
-        scrollTop: $("#about").offset().top - 45 //balances out the padding
+        scrollTop: $("#calendar").offset().top - 90 //balances out the padding
     },10);
 });
 
