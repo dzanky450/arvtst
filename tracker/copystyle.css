@@ -1,0 +1,170 @@
+.containerz {
+  padding-left: 16%;
+  padding-right: 16%;
+}
+
+.containerz .flexMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.containerz .flexMain .flexUnit {
+  background: white;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  min-height: 200px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+  border-radius: 10px;
+  -webkit-box-shadow: -2px 2px 20px rgba(0, 0, 0, 0.16);
+          box-shadow: -2px 2px 20px rgba(0, 0, 0, 0.16);
+}
+
+.containerz .flexMain .flexUnit .text {
+  color: gray;
+  padding: 10px 15px;
+  -webkit-transition-duration: .25s;
+          transition-duration: .25s;
+}
+
+.containerz .flexMain .flexUnit .text:hover {
+  cursor: pointer;
+  color: #bfbfbf;
+}
+
+.containerz .flexMain .flexUnit .success {
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-name: wobble;
+          animation-name: wobble;
+}
+
+@-webkit-keyframes wobble {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  15% {
+    -webkit-transform: translateX(-10%) rotate(-4deg);
+            transform: translateX(-10%) rotate(-4deg);
+  }
+  30% {
+    -webkit-transform: translateX(7%) rotate(3deg);
+            transform: translateX(7%) rotate(3deg);
+  }
+  45% {
+    -webkit-transform: translateX(-5%) rotate(-3deg);
+            transform: translateX(-5%) rotate(-3deg);
+  }
+  60% {
+    -webkit-transform: translateX(7%) rotate(2deg);
+            transform: translateX(7%) rotate(2deg);
+  }
+  75% {
+    -webkit-transform: translateX(-2.5%) rotate(-1deg);
+            transform: translateX(-2.5%) rotate(-1deg);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes wobble {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  15% {
+    -webkit-transform: translateX(-10%) rotate(-4deg);
+            transform: translateX(-10%) rotate(-4deg);
+  }
+  30% {
+    -webkit-transform: translateX(7%) rotate(3deg);
+            transform: translateX(7%) rotate(3deg);
+  }
+  45% {
+    -webkit-transform: translateX(-5%) rotate(-3deg);
+            transform: translateX(-5%) rotate(-3deg);
+  }
+  60% {
+    -webkit-transform: translateX(7%) rotate(2deg);
+            transform: translateX(7%) rotate(2deg);
+  }
+  75% {
+    -webkit-transform: translateX(-2.5%) rotate(-1deg);
+            transform: translateX(-2.5%) rotate(-1deg);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+.containerz .flexMain .flexUnit .deleteBtn {
+  float: right;
+  padding-right: 10px;
+  margin-top: -32px;
+  z-index: 99999;
+}
+
+.containerz .addNewText {
+  margin-top: 50px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.containerz .addNewText label {
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+.containerz .addNewText textarea {
+  resize: none;
+  max-width: 400px;
+  min-height: 120px;
+  margin: 10px auto;
+}
+
+.containerz .addNewText button {
+  max-width: 90px;
+  margin: 10px auto;
+}
+
+.containerz .addNewText button .material-icons {
+  font-size: 1.35em;
+}
+
+.tooltip {
+  opacity: 0;
+  font-size: .85em;
+  position: absolute;
+  background: #00d1b2;
+  -webkit-box-shadow: -2px 2px 20px rgba(0, 0, 0, 0.16);
+          box-shadow: -2px 2px 20px rgba(0, 0, 0, 0.16);
+  color: white;
+  max-width: 100px;
+  border-radius: 3px;
+  padding: 5px 10px 4.5px 10px;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+}
+/*# sourceMappingURL=copystyle.css.map */

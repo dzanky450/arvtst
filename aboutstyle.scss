@@ -1,0 +1,353 @@
+@import 'mainstyle';
+
+//variables
+$desktop: 10%;
+$mobile: 6%;
+$red: #ff2222;
+$redHover: #ff4444;
+$redActive: #b8181c;
+$lightGrey: #ededed;
+
+.nav{
+    background-color: black;
+}
+.about{
+    padding-top: 90px;
+    padding-left: 0;
+    padding-right: 0;
+    h1{
+        margin-bottom: 0;
+    }
+    .aboutText{
+        padding-left: $mobile;
+        padding-right: $mobile;
+        max-width: 800px;
+        margin: 20px auto;
+    }
+    hr{
+        display: none;
+    }
+    //reasons section
+    .reasons{
+        display: flex;
+        flex-direction: row;
+        margin-left: $desktop*2;
+        margin-right: $desktop*2;
+        .reasonUnit{
+            &:first-child{
+                margin-right: 50px;
+            }
+            &:last-child{
+                margin-left: 50px;
+            }
+            h3, p{
+                margin-left: 0;
+                margin-right: 0;
+                padding-left: 0;
+                padding-right: 0;
+                text-align: left;
+                max-width: unset;
+            }
+        }
+    }
+
+    //magic here
+    #wrapBlack{
+        background-color: black;
+        width: 100%;
+        display: block;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        transition-duration: 1s;
+    }
+    .caseCarousel{
+        background: black;
+        color: white;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        margin-top: 40px;
+        text-align: left;
+        display: flex;
+        justify-content: center;
+        max-width: 1150px;
+        margin: 0 auto;
+        .testUnit{
+            align-self: center;
+        }
+        h1{
+            margin: 0;
+            padding-left: $desktop;
+            padding-right: $desktop;
+            font-weight: normal !important; 
+            font-size: 1em;
+        }
+        p{
+            padding-left: 0;
+            margin-top: 10px;
+            padding-left: $desktop;
+            padding-right: $desktop;
+            max-width: 500px;
+            font-weight: 200;
+        }
+        
+    }
+    h2{
+        margin-top: 0px;
+        padding-top: 30px;
+        border-top: solid 1px black;
+        &:first-of-type{
+            border: none;
+        }
+    }
+    .aboutClients{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        .ourClientLogo{
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            flex-basis: 20%;
+            margin-bottom: 40px;
+            height: 60px;
+            width: 120px;
+        }
+        //furniture
+        .f1{background-image: url('imgs/logos/f1.png');}
+        .f2{background-image: url('imgs/logos/f2.png');}
+        .f3{background-image: url('imgs/logos/f3.png');}
+        .f5{background-image: url('imgs/logos/f5.png');}
+        .f6{background-image: url('imgs/logos/f6.png');}
+        .f7{background-image: url('imgs/logos/f7.png');}
+        .f8{background-image: url('imgs/logos/f8.png');}
+        .f9{background-image: url('imgs/logos/f9.png');}
+        .f10{background-image: url('imgs/logos/f10.png');}
+        .f11{background-image: url('imgs/logos/f11.png');}
+        .f12{background-image: url('imgs/logos/f12.png');}
+        .f13{background-image: url('imgs/logos/f13.png');}
+        .f14{background-image: url('imgs/logos/f14.png');}
+        .f15{background-image: url('imgs/logos/f15.png');}
+        .f16{background-image: url('imgs/logos/f16.png');}
+        .f17{background-image: url('imgs/logos/f17.png');}
+        .f18{background-image: url('imgs/logos/f18.png');}
+        .f19{background-image: url('imgs/logos/f19.png');}
+        .f21{background-image: url('imgs/logos/f21.png');}
+        .f22{background-image: url('imgs/logos/f22.png');}
+        .f23{background-image: url('imgs/logos/f23.png');}
+        .f24{background-image: url('imgs/logos/f24.png');}
+        .f25{background-image: url('imgs/logos/f25.png');}
+        .f26{background-image: url('imgs/logos/f26.png');}
+        .f27{background-image: url('imgs/logos/f27.png');}
+        .f28{background-image: url('imgs/logos/f28.jpg');}
+        .f29{background-image: url('imgs/logos/f29.jpg');}
+        .f30{background-image: url('imgs/logos/f30.jpg');}
+        .f31{background-image: url('imgs/logos/f31.jpg');}
+        .f32{background-image: url('imgs/logos/f32.jpg');}
+        .f33{background-image: url('imgs/logos/f33.jpg');}
+        .f34{background-image: url('imgs/logos/f34.jpg');}
+        .f35{background-image: url('imgs/logos/f35.jpg');}
+        .f36{background-image: url('imgs/logos/f36.jpg');}
+        .f37{background-image: url('imgs/logos/f37.jpg');}
+        .f38{background-image: url('imgs/logos/f38.jpg');}
+        .f39{background-image: url('imgs/logos/f39.jpg');}
+        .f40{background-image: url('imgs/logos/f40.jpg');}
+        .f41{background-image: url('imgs/logos/f41.jpg');}
+        .f42{background-image: url('imgs/logos/f42.jpg');}
+        .f43{background-image: url('imgs/logos/f43.jpg');}
+        .f44{background-image: url('imgs/logos/f44.jpg');}
+        .f45{background-image: url('imgs/logos/f45.jpg');}
+        .f46{background-image: url('imgs/logos/f46.jpg');}
+        .f47{background-image: url('imgs/logos/f47.jpg');}
+        .f48{background-image: url('imgs/logos/f48.jpg');}
+        .f49{background-image: url('imgs/logos/f49.jpg');}
+        .f50{background-image: url('imgs/logos/f50.jpg');}
+        .f53{background-image: url('imgs/logos/f53.jpg');}
+        .f54{background-image: url('imgs/logos/f54.jpg');}
+        //lighting
+        .l1{background-image: url('imgs/logos/l1.png');}
+        .l2{background-image: url('imgs/logos/l2.png');}
+        .l3{background-image: url('imgs/logos/l3.png');}
+        .l4{background-image: url('imgs/logos/l4.png');}
+        .l5{background-image: url('imgs/logos/l5.png');}
+        .l6{background-image: url('imgs/logos/l6.png');}
+        .l7{background-image: url('imgs/logos/l7.png');}
+        .l8{background-image: url('imgs/logos/l8.png');}
+        .l9{background-image: url('logos/zero.png');}
+        .l10{background-image: url('imgs/logos/l10.png');}
+        .l11{background-image: url('imgs/logos/l11.png');}
+        .l12{background-image: url('imgs/logos/l12.png');}
+        .l13{background-image: url('imgs/logos/l13.jpg');}
+        .l14{background-image: url('imgs/logos/l14.jpg');}
+        .l15{background-image: url('imgs/logos/l15.jpg');}
+        .l16{background-image: url('imgs/logos/l16.jpg');}
+        .l17{background-image: url('imgs/logos/l17.jpg');}
+        .l18{background-image: url('imgs/logos/l18.jpg');}
+        //fireplaces
+        .k1{background-image: url('imgs/logos/k1.png');}
+        .k2{background-image: url('imgs/logos/k2.png');}
+        .k3{background-image: url('imgs/logos/k3.png');}
+        .k4{background-image: url('imgs/logos/k4.png');}
+        .k5{background-image: url('imgs/logos/k5.jpg');}
+        .k6{background-image: url('imgs/logos/k6.jpg');}
+        .k7{background-image: url('imgs/logos/k7.jpg');}
+        .k8{background-image: url('imgs/logos/k8.jpg');}
+        .k9{background-image: url('imgs/logos/k9.jpg');}
+        .k10{background-image: url('imgs/logos/k10.jpg');}
+        .k11{background-image: url('imgs/logos/k11.jpg');}
+        .k12{background-image: url('imgs/logos/k12.jpg');}
+        .k13{background-image: url('imgs/logos/k13.jpg');}
+        .k14{background-image: url('imgs/logos/k14.jpg');}
+        .k15{background-image: url('imgs/logos/k15.jpg');}
+        //office furniture
+        .o1{background-image: url('imgs/logos/o1.png');}
+        .o2{background-image: url('imgs/logos/o2.png');}
+        .o3{background-image: url('imgs/logos/o3.png');}
+        .o4{background-image: url('imgs/logos/f20.png');}
+        .o5{background-image: url('imgs/logos/o4.jpg');}
+        .o6{background-image: url('imgs/logos/o5.jpg');}
+        .o7{background-image: url('imgs/logos/o6.jpg');}
+        //heat pumps
+        .hp1{background-image: url('imgs/logos/hp1.jpg');}
+        .hp2{background-image: url('imgs/logos/hp2.jpg');}
+        .hp3{background-image: url('imgs/logos/hp3.jpg');}
+        .hp4{background-image: url('imgs/logos/hp4.jpg');}
+        .hp5{background-image: url('imgs/logos/hp5.jpg');}
+        .hp6{background-image: url('imgs/logos/hp6.jpg');}
+        //carpets
+        .cp1{background-image: url('imgs/logos/cp1.jpg');}
+        .cp2{background-image: url('imgs/logos/cp2.jpg');}
+        .cp3{background-image: url('imgs/logos/cp3.jpg');}
+        .cp4{background-image: url('imgs/logos/cp4.jpg');}
+        .cp5{background-image: url('imgs/logos/cp5.jpg');}
+        .cp6{background-image: url('imgs/logos/cp6.jpg');}
+        .cp7{background-image: url('imgs/logos/cp7.jpg');}
+        .cp8{background-image: url('imgs/logos/cp8.jpg');}
+        //radiators
+        .r1{background-image: url('imgs/logos/r1.png');}
+        .r2{background-image: url('imgs/logos/r2.png');}
+        .r3{background-image: url('imgs/logos/r3.png');}
+        .r4{background-image: url('imgs/logos/r4.jpg');}
+        //sunshades
+        .ss1{background-image: url('imgs/logos/ss1.jpg');}
+        .ss2{background-image: url('imgs/logos/ss2.jpg');}
+        .ss3{background-image: url('imgs/logos/ss3.jpg');}
+        .ss4{background-image: url('imgs/logos/x4.jpg');}
+        //surfaces
+        .sf1{background-image: url('imgs/logos/sf1.jpg');}
+        .sf2{background-image: url('imgs/logos/sf2.jpg');}
+        .sf3{background-image: url('imgs/logos/f52.jpg');}
+        .sf4{background-image: url('imgs/logos/sf3.jpg');}
+        //bathrooms
+        .sn1{background-image: url('imgs/logos/sn1.jpg');}
+        .sn2{background-image: url('imgs/logos/f4.png');}
+        .sn3{background-image: url('imgs/logos/f51.jpg');}
+    }
+}
+footer{
+    margin-top: 30px;
+}
+@media only screen and (max-width: 1260px) {
+    .about{
+        .reasons{
+            margin-left: $mobile;
+            margin-right: $mobile;
+        }
+    }
+}
+@media only screen and (max-width: 1100px) {
+    .about{
+        .reasons{
+            .reasonUnit{
+                h3{
+                    margin-bottom: 5px;
+                }
+                p{
+                    margin-top: 0px;
+                }
+            }
+        }
+        .aboutClients{
+            .ourClientLogo{
+                flex-basis: 25%;
+            }
+        }
+        #wrapBlack{
+            margin-top: 20px;
+        }
+    }
+}
+@media only screen and (max-width: 900px) {
+    .about{
+        .aboutClients{
+            .ourClientLogo{
+                flex-basis: 33.33%;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 750px) {
+    .about{
+        h1{
+            text-align: left;
+            padding-left: $mobile;
+        }
+        .aboutText{
+            margin-top: 10px;
+            text-align: left;
+        }
+        .reasons{
+            flex-direction: column;
+            .reasonUnit{
+                &:first-child{
+                    margin-left: 0;
+                    margin-right: 0;
+                    p{
+                        &:last-child{
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+                &:last-child{
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+            }
+        }
+    }    
+}
+@media only screen and (max-width: 600px) {
+    .about{
+        padding-top: 80px;
+        p{
+            padding-left: $mobile;
+            padding-right: $mobile;
+        }
+        hr{
+            display: block;
+            width: 100% - $mobile*2;            
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        .aboutClients{
+            .ourClientLogo{
+                flex-basis: 50%;
+                height: 50px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 420px) {
+    .about{
+        h2{
+            font-size: 1.2em;
+        }
+        hr{
+            margin-top: 25px;
+            margin-bottom: 5px;
+        }
+    }
+    footer{
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,114 @@
+@import '../mainstyle';
+
+//variables
+$desktop: 10%;
+$mobile: 6%;
+
+.nav{
+    background-color: black;
+}
+
+//portfolio section
+.content{
+    margin-bottom: 50px;
+    padding-top: 80px;
+    padding-left: $desktop;
+    padding-right: $desktop;
+    h1{
+        text-align: center;
+    }
+    .ARflex{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        .ARelement{
+            height: 350px;
+        }
+    }
+    .mainFlexAR{
+        display: flex;
+        flex-wrap: wrap;
+        a{
+            width: 50%;
+            .unit{
+                flex-basis: calc(50% - 20px);
+                height: 200px;
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                margin-top: 10px;
+                transition-duration: .2s;
+                &:hover{
+                    cursor: pointer;
+                    transform: translateY(-10px);
+                }
+            }   
+        }
+        .unit1{background-image: url('../imgs/render1-(2).jpg');}
+        .unit2{
+            background-image: url('../imgs/RIME_356A1182_2.jpg');
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .unit3{background-image: url('../imgs/ezgif.com-webp-to-jpg.jpg');}
+        .unit4{background-image: url('../imgs/arvisual_main01.jpg');}
+        .unit5{
+            background-image: url('../imgs/arvisual_main01.jpg');
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .unit6{background-image: url('../imgs/arvisual_main01.jpg');}
+
+    }
+}
+@media only screen and (max-width: 750px) {
+    .content{
+        h1{
+            font-size: 1.5em;
+        }
+        .ARflex{
+            .ARelement{
+                height: 200px;
+            }
+        }
+        .mainFlexAR{
+            .unit{
+            flex-basis: calc(50% - 10px);
+            margin: 0 ;
+            margin-top: 10px;
+            &:nth-of-type(odd){
+                margin-right: 5px;
+            }
+            &:nth-of-type(even){
+                margin-left: 5px;
+            }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 550px) {
+    .content{
+        h1{
+            font-size: 1.5em;
+        }
+        .ARflex{
+            .ARelement{
+                height: 200px;
+            }
+        }
+        .mainFlexAR{
+            .unit {
+                flex-basis: 100%;
+                margin: 0;
+                margin-top: 10px;
+                &:nth-of-type(odd){
+                    margin-right: 0px;
+                }
+                &:nth-of-type(even){
+                    margin-left: 0px;
+                }
+            }
+        }
+    }
+}

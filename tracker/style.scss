@@ -1,0 +1,192 @@
+.note{
+    max-width: 220px;
+    word-wrap: break-word;
+}
+.name{
+    width: 36%;
+}
+
+tr{
+    transition-duration: .3s;
+    &:hover{
+        background: #e5e5e5 !important;
+        .name{
+            font-weight: bold;
+        }
+    }
+    &:nth-of-type(even){
+        transition-duration: .3s;
+        background: #f5f5f5;
+        &:hover{
+            background: #e5e5e5 !important;
+        }
+    }
+}
+
+td{
+    vertical-align: middle !important;
+}
+
+//created max width
+.created{
+    width: 10%;
+    text-align: center;
+}
+
+//add note styling
+.formWidth{
+    max-width: 250px;
+    display: flex;
+    justify-content: center;
+    input{
+        height: 25px;
+        align-self: center;
+    }
+    button{
+        margin-left: 20px;
+    }
+}
+
+//fix table width
+.table{
+    width: 100%;
+    margin-top: 40px;
+    border-top: 2px solid #dbdbdb;
+}
+
+//button hover settings
+button{
+    transition-duration: .3s;
+    &:hover{
+        opacity: .7;
+    }
+}
+
+.logoCont{
+    width: 100%;
+    width: 20px;
+    .logoAR{
+        background: url('https://www.arvisual.eu/ar_visual_logo.svg') no-repeat center;
+        background-size: cover;
+        width: 135px;
+        height: 36px;
+        margin-top: 20px;
+    }
+}
+
+//pagination next previous
+.prev{
+    margin-right: 30px;
+    padding-left: 5px;
+    min-width: 80px;
+
+}
+.next{
+    margin-left: 30px;
+    padding-right: 5px;
+    min-width: 80px;
+}
+
+//search
+.searchFlex{
+    display: flex;
+    position: absolute;
+    top: 5px;
+    right: 0;
+    .search{
+        display: flex;
+        margin-bottom: 20px;
+        margin-right: 40px;
+        justify-content: center;
+        &:last-of-type{
+            margin-right: 0;
+        }
+        input{
+            max-width: 250px;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        button{
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+    }
+}
+
+//add lead styling
+.addLead{
+    display: flex;
+    max-width: 100% !important;
+    input{
+        margin-right: 40px;
+    }
+    label{
+        align-self: center;
+        margin-right: 10px;
+        font-weight: bold;
+    }
+}
+
+.compWidth{
+    width: 8%;
+}
+
+//fix delete button width
+.delit{
+    width: 10px;
+    form{
+        display: flex;
+    justify-content: center;
+    }
+    .delete{
+        background: #ff3860;
+    }
+}
+
+//popup
+.popupBody{
+    background: white;
+    box-shadow: 1px 0px 12px rgba($color: #000000, $alpha: .15);
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -190px;
+    transition-duration: .25s;
+    padding-left: 1%;
+    padding-right: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .menuInputHeight{
+        height: fit-content;
+        resize: none;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        textarea{
+            resize: none;
+            height: 200px;
+            margin-bottom: 20px;
+        }
+        label{
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+    }
+    .closePopup{
+        a{
+            margin-right: 15px;
+            top: 16px;
+            position: absolute;
+            right: 0;
+        }
+    }
+}
+
+.pagination{
+    justify-content: center;
+    margin-top: 30px;
+}

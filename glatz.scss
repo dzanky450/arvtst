@@ -1,0 +1,238 @@
+@import 'work';
+
+//variables
+$desktop: 10%;
+$mobile: 6%;
+$red: #ff2222;
+$redHover: #ff4444;
+$redActive: #b8181c;
+$lightGrey: #ededed;
+
+.portfolio{
+    padding-top: 60px;
+    .mainImgCase1{
+        background: url('../imgs/arvisual_main01.jpg')no-repeat center;
+        background-size: cover;
+        height: 400px;
+        margin-bottom: 20px;
+    }
+    .mainFlexCase1{
+        display: flex;
+        .textCase1{
+            flex-basis: 50%;
+            align-self: center;
+            padding-right: 10px;
+        }
+        .image1{
+            background: url('../imgs/arvisual_main02.jpg')no-repeat center;
+            background-size: cover;
+            height: auto;
+            flex-basis: 50%;
+            padding-left: 10px;
+        }
+    }
+    .mainFlexCase2{
+        display: flex;
+        .textCase2{
+            flex-basis: 50%;
+            align-self: center;
+            padding-left: 10px;
+        }
+        .image2{
+            background: url('../imgs/arvisual_main02.jpg')no-repeat center;
+            background-size: cover;
+            height: 400px;
+            flex-basis: 50%;
+            padding-right: 10px;
+        }
+    }
+    .mainImgCase3{
+        background: url('../imgs/arvisual_main01.jpg')no-repeat center;
+        background-size: cover;
+        height: 400px;
+        margin-bottom: 20px;
+    }
+    .mainFlexCase3{
+        display: flex;
+        .textCase3{
+            flex-basis: 50%;
+            align-self: center;
+            padding-right: 10px;
+        }
+        .image3{
+            background: url('../imgs/arvisual_main02.jpg')no-repeat center;
+            background-size: cover;
+            height: auto;
+            flex-basis: 50%;
+            padding-left: 10px;
+        }
+    }
+    .mainFlexCase4{
+        display: flex;
+        .textCase4{
+            flex-basis: 50%;
+            align-self: center;
+            padding-left: 10px;
+        }
+        .image4{
+            background: url('../imgs/arvisual_main02.jpg')no-repeat center;
+            background-size: cover;
+            height: 400px;
+            flex-basis: 50%;
+            padding-right: 10px;
+        }
+    }
+    .mainImgCase5{
+        background: url('../imgs/arvisual_main01.jpg')no-repeat center;
+        background-size: cover;
+        height: 400px;
+        margin-bottom: 20px;
+    }
+    .mainFlexCase5{
+        display: flex;
+        .textCase5{
+            flex-basis: 50%;
+            align-self: center;
+            padding-left: 10px;
+        }
+        .image5{
+            background: url('../imgs/arvisual_main02.jpg')no-repeat center;
+            background-size: cover;
+            height: auto;
+            flex-basis: 50%;
+            padding-right: 10px;
+        }
+    }
+    .mainFlexCase6{
+        display: flex;
+        .textCase6{
+            flex-basis: 50%;
+            align-self: center;
+            padding-left: 10px;
+        }
+        .image6{
+            background: url('../imgs/arvisual_main02.jpg')no-repeat center;
+            background-size: cover;
+            height: 400px;
+            flex-basis: 50%;
+            padding-right: 10px;
+        }
+    }
+    .mainImgCase7{
+        background: url('../imgs/arvisual_main01.jpg')no-repeat center;
+        background-size: cover;
+        height: 400px;
+        margin-bottom: 20px;
+    }
+    .mainFlexCase7{
+        display: flex;
+        .textCase7{
+            flex-basis: 50%;
+            align-self: center;
+            padding-left: 10px;
+        }
+        .image7{
+            background: url('../imgs/arvisual_main02.jpg')no-repeat center;
+            background-size: cover;
+            height: auto;
+            flex-basis: 50%;
+            padding-right: 10px;
+        }
+    }
+    .mainFlexCase8{
+        display: flex;
+        .textCase8{
+            flex-basis: 50%;
+            align-self: center;
+            padding-left: 10px;
+        }
+        .image8{
+            background: url('../imgs/arvisual_main02.jpg')no-repeat center;
+            background-size: cover;
+            height: 400px;
+            flex-basis: 50%;
+            padding-right: 10px;
+        }
+    }
+    .mainImgCase9{
+        background: url('../imgs/arvisual_main01.jpg')no-repeat center;
+        background-size: cover;
+        height: 400px;
+        margin-bottom: 20px;
+    }
+    .mainFlexCase9{
+        display: flex;
+        .textCase9{
+            flex-basis: 50%;
+            align-self: center;
+            padding-left: 10px;
+        }
+        .image9{
+            background: url('../imgs/arvisual_main02.jpg')no-repeat center;
+            background-size: cover;
+            height: auto;
+            flex-basis: 50%;
+            padding-right: 10px;
+        }
+    }
+    .mainFlexCase10{
+        display: flex;
+        .textCase10{
+            flex-basis: 50%;
+            align-self: center;
+            padding-left: 10px;
+        }
+        .image10{
+            background: url('../imgs/arvisual_main02.jpg')no-repeat center;
+            background-size: cover;
+            height: 400px;
+            flex-basis: 50%;
+            padding-right: 10px;
+        }
+    }
+    .mainImgCase11{
+        background: url('../imgs/arvisual_main01.jpg')no-repeat center;
+        background-size: cover;
+        height: 400px;
+        margin-bottom: 20px;
+    }
+    .mainFlexCase11{
+        display: flex;
+        .textCase11{
+            flex-basis: 50%;
+            align-self: center;
+            padding-left: 10px;
+        }
+        .image11{
+            background: url('../imgs/arvisual_main02.jpg')no-repeat center;
+            background-size: cover;
+            height: auto;
+            flex-basis: 50%;
+            padding-right: 10px;
+        }
+    }
+    .mainFlexCase12{
+        display: flex;
+        .textCase12{
+            flex-basis: 50%;
+            align-self: center;
+            padding-left: 10px;
+        }
+        .image12{
+            background: url('../imgs/arvisual_main02.jpg')no-repeat center;
+            background-size: cover;
+            height: 400px;
+            flex-basis: 50%;
+            padding-right: 10px;
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 750px){
+
+
+
+
+}

@@ -1,0 +1,1364 @@
+//variables
+$desktop: 10%;
+$mobile: 6%;
+$red: #e50872;
+$redHover: #ee3991;
+$redActive: #c50562;
+$lightGrey: #ededed;
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+  }
+
+.scrollFix{
+    overflow: hidden;
+}
+  
+  .nav {
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    z-index: 2014;
+    height: 60px;
+    line-height: 60px;
+    transition-duration: .2s;
+    .logoWrap{
+        padding-left: $desktop;
+        .logo{
+            background: url('imgs/logo.svg')no-repeat left;
+            background-size: contain;
+            width: 160px;
+            height: 32px;
+            margin-top: 15px;
+            float: left;
+            
+        }
+    }
+  }
+  .whiteNav{
+      background-color: white;
+      box-shadow: 0px 2px 6px 0px rgba(0,0,0,.1);
+      .logoWrap{
+        .logo{
+            background: url('imgs/logo_black.svg')no-repeat left;
+            background-size: contain;
+            width: 160px;
+            height: 32px;
+            margin-top: 15px;
+            float: left;
+        }
+      }
+      .menu{
+        a{
+            color: black;
+        }
+      }
+  }
+  .menu {
+      float: right;
+      padding-right: $desktop;
+      user-select: none;
+      height: 60px;
+    a {
+    text-decoration: none;
+    color: white;
+    margin-left: 50px;
+    transition-duration: .2s;
+    user-select: none;
+    line-height: 65px;
+        &:hover{
+            color:$red;
+        }
+    }
+  }
+  .menuBtn {
+    font-size: 26px;
+    line-height: 60px;
+    display: none;
+    width: 26px;
+    float: right;
+  }
+#toggle {
+display: none;
+}
+.bars{
+    color: white;
+}
+
+//main carousel
+.mainCarousel{
+    .mainCarouselImg{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        height: 100vh;
+    }
+    .mainImg1{
+        background-image: url('imgs/arvisual_main01.jpg');
+        background-position: center;
+    }
+    .mainImg2{background-image: url('imgs/arvisual_main04.jpg');}
+    .mainImg3{background-image: url('imgs/arvisual_main03.jpg');}
+}
+//dots settings
+.owl-dots{
+    margin-top: -40px !important;
+    z-index: 555 !important;
+    position: relative !important;
+    .active{
+        span{
+            background: $red !important;
+        }
+    }
+    .owl-dot{
+        &:hover{
+            span{
+                background: $red !important;
+            }
+        }
+    }
+}
+//main header and subheader
+.mainInfo{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    z-index: 5;
+    padding-left: $desktop;
+    h1{
+        font-size: 4.5em;
+        line-height: 1.1em;
+        pointer-events: none;
+        user-select: none;
+        letter-spacing: .5px;
+    }
+    h2{
+        font-weight: normal;
+        font-size: 1.4em;
+        line-height: 1.6em;
+        margin-bottom: 50px;
+        pointer-events: none;
+        user-select: none;
+        letter-spacing: .5px;
+    }
+    .h2hide{
+        display: none;
+    }
+    .socialBtns{
+        margin-top: 50px;
+        user-select: none;
+        a{
+            color: white;
+            font-size: 1.7em;
+            margin-right: 30px;
+            transition-duration: .2s;
+            &:hover{
+                color: $red;
+            }
+            &:active{
+                color: $redActive;
+            }
+            .fa-facebook-f{
+                font-size: .9em;
+            }
+        }
+    }
+    .mainCta{
+        margin-top: 50px;
+        .button{
+            background-color: $red;
+            color: white;
+            text-decoration: none;
+            transition-duration: .2s;
+            padding: 9px 25px 8px 25px;
+            border-radius: 50px;
+            &:hover{
+                background-color: $redHover;
+            }
+            &:active{
+                background-color: $redActive;;
+            }
+        }
+    }
+}
+.mobileAction{
+    display: none;
+}
+//about section
+.about{
+    text-align: center;
+    padding-top: 30px;
+    padding-left: $desktop;
+    padding-right: $desktop;
+    h1{
+        margin-bottom: 40px;
+    }
+    .ourClients{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-left: 15%;
+        padding-right: 15%;
+        .ourClientLogo{
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            flex-basis: 20%;
+            height: 60px;
+            transition-duration: .2s;
+            &:hover{
+                opacity: .6;
+            }
+        }
+        .minotti{background-image: url('logos/minotti.png')}
+        .ikea{background-image: url('logos/ikea.png')}
+        .mariner{background-image: url('logos/mariner.png')}
+        .papadatos{background-image: url('logos/papadatos.png')}
+        .enne{background-image: url('logos/enne.png')}
+        .fritzhansen{background-image: url('logos/fritzhansen.png')}
+        .usm{background-image: url('logos/usm.png')}
+        .toshiba{background-image: url('logos/toshiba.png')}
+        .wever{background-image: url('logos/wever.jpg')}
+        .terzani{background-image: url('logos/terzani.png')}
+    }
+}
+//News section
+.news{
+    margin-top: 50px;
+    background-color: black;
+    text-align: center;
+    padding-left: $desktop;
+    padding-right: $desktop;
+    .newsFlex{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-bottom: 40px;
+        padding-top: 50px;
+        .newsItem{
+            border-left: solid white 1px;
+            flex-basis: 33.33%;
+            text-align: left;
+            padding-left: 20px;
+            padding-right: 40px;
+            h2{
+                font-size: 20px;
+                font-weight: bold;
+                color: white;
+                margin-top: 0;
+                margin-bottom: 0px;
+            }
+            p{
+                color: white;
+                margin-top: 5px;
+                line-height: 1.8em;
+                font-weight: 200;
+                letter-spacing: .5px;
+                font-size: 14px;
+            }
+            .date{
+                color: white;
+                font-size: 14px;
+                margin: 0;
+                letter-spacing: .8px;
+            }
+            &:nth-of-type(2){
+                margin: 0px 15px 0px 15px;
+            }
+        }
+    }
+    .buttonWrap{
+        padding-bottom: 50px;
+        .button{
+            background: white;
+            color: black;
+            padding: 9px 25px 8px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            transition-duration: .2s;
+            &:hover{
+                background-color: black;
+                border: white 1px solid;
+                color: white;
+            }
+            &:active{
+                background-color: rgb(39, 39, 39);
+            }
+        }
+    }
+    .newsFlexMin{
+        display: none !important;
+    }
+}
+//portfolio section
+.portfolio{
+    text-align: center;
+    padding-top: 20px;
+    padding-left: $desktop;
+    padding-right: $desktop;
+    h1{
+        margin-bottom: 10px;
+    }
+    p{
+        margin: 0 auto;
+        max-width: 1000px;
+        line-height: 1.6em;
+        margin-bottom: 50px;
+    }
+    .pictures{
+        img{
+            transition-duration: .2s;
+            &:hover{
+                transform: translateY(-20px);
+                cursor: pointer;
+            }
+        }
+    }
+    .buttonWrap{
+        margin-top: 0px !important;
+        margin-bottom: 20px;
+        .button{
+            background: black;
+            color: white;
+            padding: 9px 25px 8px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            transition-duration: .2s;
+            border: black 1px solid;
+            &:hover{
+                background-color: white;
+                border: black 1px solid;
+                color: black;
+            }
+            &:active{
+                background-color: rgb(39, 39, 39);
+            }
+        }
+    }
+}
+//modal section
+.modalMain{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: rgba($color: #000000, $alpha: 0.85);
+    z-index: 9999;
+    .imgWrapper{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: auto;
+        height: 90vh;
+        .actualImg{
+            max-height: 90vh;
+            max-width: 90vw;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);   
+        }
+        &:hover{
+            cursor: zoom-in;
+        }
+    }
+    .prev{
+        position: absolute;
+        font-size: 2em;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 20px;
+        color: white;
+        transition-duration: .2s;
+        &:hover{
+            cursor: pointer;
+            color: $red;
+        }
+    }
+    .next{
+        position: absolute;
+        font-size: 2em;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 20px;
+        color: white;
+        transition-duration: .2s;
+        &:hover{
+            cursor: pointer;
+            color: $red;
+        }
+    }
+    .zoom{
+        height: 100%;
+        width: 100%;
+        overflow: auto;
+        .actualImg{
+            height: auto;
+            width: auto;
+            max-width: unset;
+            max-height: unset;
+            cursor: zoom-out;
+        }
+    }
+    .exitBtn{
+        color: white;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        font-size: 1.5em;
+        transition-duration: .2s;
+        &:hover{
+            color: $red;
+            cursor: pointer;
+        }
+    }
+}
+//case studies project section
+.cases{
+    background: black;
+    padding-left: $desktop;
+    padding-right: $desktop;
+    text-align: center;
+    margin-top: 70px;
+    padding-bottom: 50px;
+    padding-top: 10px;
+    h1{
+        margin-bottom: 10px;
+        color: white;
+        padding-top: 30px;
+    }
+    p{
+        margin: 0 auto;
+        max-width: 1000px;
+        line-height: 1.6em;
+        margin-bottom: 50px;
+        color: white;
+    }
+    .caseCarouselStudy{
+        .case{
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 500px;
+        }
+        .study1{background-image: url('imgs/small/35.jpg')}
+        .study2{background-image: url('imgs/small/11.jpg')}
+        .study3{background-image: url('imgs/small/12.jpg')}
+    }
+    .buttonWrap{
+        margin-top: 50px;
+        .button{
+            background: white;
+            color: black;
+            padding: 9px 25px 8px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            transition-duration: .2s;
+            &:hover{
+                background-color: black;
+                border: white 1px solid;
+                color: white;
+            }
+            &:active{
+                background-color: rgb(39, 39, 39);
+            }
+        }
+    }
+}
+.calendar{
+    padding-left: $desktop;
+    padding-right: $desktop;
+    text-align: center;
+    margin-top: 50px;
+    p{
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .contact_form{
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+        margin: 0 auto;
+        margin-top: 20px;
+        input{
+            margin-bottom: 20px;
+            margin-top: 10px;
+            height: 25px;
+            border-radius: 50px;
+            border: #bebebe 1px solid;
+            padding-left: 15px;
+            font-family: 'Poppins', sans-serif;
+            font-size: .8em;
+        }
+        textarea{
+            border-radius: 15px;
+            border: #bebebe 1px solid;
+            padding-left: 15px;
+            padding-top: 10px;
+            font-family: 'Poppins', sans-serif;
+            font-size: .8em;
+            margin-bottom: 20px;
+            resize: none;
+        }
+        p{
+            a{
+                color: $red;
+            }
+        }
+        .g-recaptcha{
+            margin-top: 20px;
+        }
+        button{
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            max-width: 150px;
+            padding: 9px 25px 8px 25px;
+            margin: 0px auto;
+            margin-top: 20px;
+            border: white 1px solid;
+            transition-duration: .2s;
+            font-size: 1em;
+            font-family: 'Poppins', 'sans-serif';
+            &:hover{
+                background-color: white;
+                border: black 1px solid;
+                cursor: pointer;
+                color: black;
+            }
+            &:active{
+                background-color: rgb(184, 184, 184);
+            }
+        }
+    }
+}
+.successAlert{
+    display: none;
+    padding-left: $desktop;
+    padding-right: $desktop;
+    text-align: center;
+    margin-top: 50px;
+    p{
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .okBtn{
+        background-color: black;
+        border: none;
+        border-radius: 50px;
+        max-width: 70px;
+        padding: 9px 25px 8px 25px;
+        margin: 0px auto;
+        margin-top: 20px;
+        border: white 1px solid;
+        transition-duration: .2s;
+        font-size: 1em;
+        font-family: 'Poppins', 'sans-serif';
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        &:hover{
+            background-color: white;
+            border: black 1px solid;
+            color: black;
+            cursor: pointer;
+            a{
+                color: black;
+            }
+        }
+        &:active{
+            background-color: rgb(184, 184, 184);
+        }
+    }
+}
+.advantages{
+    margin-top: 50px;
+    padding-left: $desktop;
+    padding-right: $desktop;
+    background-color: black;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    h1{
+        text-align: center;
+        color: white;
+    }
+    .advFlex{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        color: white;
+        .advUnit{
+            flex-basis: 33.33%;
+            h3{
+                margin-bottom: 0px;
+                letter-spacing: 0.2px;
+            }
+            p{
+                padding-right: 100px;
+                margin-top: 5px;
+                font-weight: 200;
+            }
+        }
+    }
+}
+.ARpart{
+    margin-top: 50px;
+    text-align: center;
+    padding-left: $desktop;
+    padding-right: $desktop;
+    .videoWrapper{
+        position: relative;
+        padding-bottom: 26.25%;
+        padding-top: 25px;
+        height: 0;
+        width: 50%;
+        margin: 50px auto;
+        .video{
+            iframe{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .modelText{
+        text-align: left;
+        max-width: 800px;
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+}
+.modellingPart{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    padding-left: $desktop;
+    padding-right: $desktop;
+    .modelText{
+        text-align: left;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    .modellingImages{
+        margin-bottom: 50px;
+        .packshot{
+            height: 500px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        .pImg2{background-image: url('imgs//packshots/02.jpg');}
+        .pImg3{background-image: url('imgs//packshots/03.jpg');}
+        .pImg4{background-image: url('imgs//packshots/04.jpg');}
+        .pImg6{background-image: url('imgs//packshots/06.jpg');}
+    }
+}
+footer{
+    background-color: black;
+    padding-top: 10px;
+    h1{
+        text-align: center;
+        color: white;
+    }
+    .footerFlex{
+        display: flex;
+        flex-direction: row;
+        .map{
+            background: url('imgs/map.svg') no-repeat center;
+            background-size: contain;
+            flex-basis: 55%;
+        }
+        .footInfo{
+            flex-basis: 45%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            .addressFlex{
+                flex-basis: 50%;
+                h2{
+                    font-weight: 200;
+                    color: white;
+                    margin-bottom: 0;
+                }
+                p{
+                    color: white;
+                    margin-top: 0;
+                }
+                &:nth-of-type(5){
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}
+.footSocial{
+    background-color: black;
+    text-align: center;
+    padding-top: 30px;
+    a{
+        color: white;
+        text-decoration: none;
+        font-size: 1.5em;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+.copyright{
+    background-color: black;
+    p{
+        margin-top: 0;
+        text-align: center;
+        padding-bottom: 15px;
+        padding-top: 30px;
+        color: white;
+    }
+}
+
+////////////////////////////MEDIA QUERIES ///////////////////////////////
+////////////////////////////MEDIA QUERIES ///////////////////////////////
+////////////////////////////MEDIA QUERIES ///////////////////////////////
+@media only screen and (max-width: 1350px) {
+    .news{
+        padding-left: $mobile;
+        padding-right: $mobile;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .about{
+        padding-left: $mobile;
+        padding-right: $mobile;
+        .ourClients{
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+    .news{
+        .newsFlex{
+            display: none;
+        }
+        .buttonWrap{
+            display: none;
+        }
+        .newsFlexMin{
+            display: block !important;
+            padding-top: 45px;
+            padding-bottom: 50px;
+            .newsItem{
+                border-left: solid white 1px;
+                text-align: left;
+                padding-left: 20px;
+                padding-right: 40px;
+                display: inline-grid;
+                h2{
+                    font-size: 20px;
+                    font-weight: bold;
+                    color: white;
+                    margin-top: 0;
+                    margin-bottom: 0px;
+                }
+                p{
+                    color: white;
+                    margin-top: 5px;
+                    line-height: 1.8em;
+                    font-weight: 200;
+                    letter-spacing: .5px;
+                    font-size: 14px;
+                    max-width: 500px;
+                }
+                .date{
+                    color: white;
+                    font-size: 14px;
+                    margin: 0;
+                    letter-spacing: .8px;
+                }
+                &:nth-of-type(2){
+                    margin: 0px 15px 0px 15px;
+                }
+            }
+        }
+    }
+    .cases{
+        .caseCarousel{
+            .case{
+                height: 300px;
+            }
+        }
+    }
+    .calendar, .successAlert{
+        padding-left: $mobile;
+        padding-right: $mobile;
+    }
+    .advantages{
+        padding-left: $mobile;
+        padding-right: $mobile;
+        .advFlex{
+            .advUnit{
+                flex-basis: 44%;
+                p{
+                    padding-right: 0;
+                }
+                &:nth-of-type(odd){
+                    padding-right: 3%;
+                }
+                &:nth-of-type(even){
+                    padding-left: 3%;
+                }
+            }
+        }
+    }
+    .ARpart{
+        .galleryCarousel{
+            a{
+                .galleryCarouselImg{
+                    height: 300px;
+                    h1{
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
+        .videoWrapper{
+            width: 100%;
+            padding-bottom: 56.25%;
+        }
+    }
+    .modalMain{
+        .next{
+            right: 0;
+            background: rgba(0,0,0,.7);
+            i{
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+        .prev{
+            left: 0;
+            background: rgba(0,0,0,.7);
+            i{
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+    }
+    footer{
+        .footerFlex{
+            .footInfo{
+                margin-left: 20px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 900px) {
+    .about{
+        .ourClients{
+            .ourClientLogo{
+                flex-basis: 33.33%;
+                &:last-of-type{
+                    display: none;
+                }
+            }
+        }
+    }
+    .portfolio{
+        padding-left: $mobile;
+        padding-right: $mobile;
+    }
+}
+@media only screen and (max-width: 770px) {
+    .nav{
+        .logoWrap{
+            padding-left: $mobile;
+        }
+    }
+    .menu{
+        padding-right: $mobile;
+        a{
+            margin-left: 30px;
+        }
+    }
+    .mainInfo{
+        padding-left: $mobile;
+    }
+    //main carousel
+    .mainCarousel{
+        .mainImg2{
+            background-image: url('imgs/arvisual_main02.jpg');
+            background-position: right;
+        }
+        .mainImg3{
+            background-image: url('imgs/arvisual_main05_m.jpg');
+            background-position: right;
+        }
+    }
+    .about{
+        padding-left: $mobile;
+        padding-right: $mobile;
+        p{
+            max-width: unset;
+        }
+    }
+    .portfolio{
+        padding-left: $mobile;
+        padding-right: $mobile;
+        p{
+            max-width: unset;
+        }
+    }
+    .cases{
+        padding-left: $mobile;
+        padding-right: $mobile;
+        h1{
+            margin-top: 5px;
+        }
+        p{
+            margin-bottom: 40px;
+        }
+    }
+    .advantages{
+        .advFlex{
+            flex-direction: column;
+            .advUnit{
+                padding: 0 !important;
+            }
+        }
+    }
+    .ARpart{
+        padding-left: $mobile;
+        padding-right: $mobile;
+    }
+    footer{
+        padding-left: $mobile;
+        padding-right: $mobile;
+        .footerFlex{
+            flex-direction: column;
+            .map{
+                flex-basis: unset;
+                height: 250px;
+                margin-top: 30px;
+            }
+            .footInfo{
+                margin-top: 30px;
+                margin-left: 0;
+                text-align: center;
+                .addressFlex{
+                    &:nth-of-type(5){
+                        flex-basis: 100%;
+                        line-height: 1.9em;
+                        p{
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 700px) {
+    .about{
+        h1{
+            margin-bottom: 20px;
+        }
+        .ourClients{
+            .ourClientLogo{
+                flex-basis: 33.33%;
+                margin-top: 20px;
+            }
+        }
+    }
+    .mainInfo{
+        h2{
+            padding-right: $mobile;
+        }
+    }
+    .portfolio{
+        padding-left: 0;
+        padding-right: 0;
+        p{
+            margin-bottom: 30px;
+        }
+    }
+    .cases{
+        margin-top: 0;
+        h1{
+            margin-top: 0;
+        }
+    }
+    .ARpart{
+        .videoWrapper{
+            padding-bottom: 51.25%;
+        }
+    }
+    .modellingPart{
+        .modellingImages{
+            .packshot{
+                height: 300px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 590px) {
+    .menuBtn {
+        padding-right: $mobile;
+        display: block;
+        cursor: pointer;
+        .bars{
+            transition-duration: .2s;
+            &:hover{
+                color: $red;
+            }
+        }
+    }
+    .menu {
+      text-align: center;
+      width: 100%;
+      position: absolute;
+      transition-duration: .3s;
+      left: -900px;
+      top: 60px;
+      opacity: 0;
+      a {
+        display: block;
+        border-bottom: 1px solid #EAEAEB;
+        margin: 0;
+        &:last-of-type{
+            border-bottom: none;
+        }
+      }
+    }
+    .menuOn{
+        left: 0px;
+        opacity: 1;
+        transition-duration: .3s;
+        background: white;
+        z-index: 9999;
+        position: absolute;
+        a{
+            color: black;
+            background-color: white;
+            &:hover{
+                background-color: $red;
+                transition: cubic-bezier(0.77, 0, 0.175, 1);
+                animation: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+                color: white;
+            }
+        }
+    }
+    .mainInfo{
+        h1{
+            font-size: 2.5em;
+        }
+        h2{
+            font-size: 1em;
+        }
+        .button{
+            width: 100%;
+            text-align: center;
+            margin: 0 auto;
+        }
+    }
+    .about{
+        h1{
+            font-size: 1.5em;
+        }
+    }
+    .portfolio{
+        h1{
+            font-size: 1.5em;
+        }
+        p{
+            padding-left: $mobile;
+            padding-right: $mobile;
+        }
+    }
+    .cases{
+        h1{
+            font-size: 1.5em;
+        }
+    }
+    .calendar{
+        h1{
+            font-size: 1.5em;
+        }
+    }
+    .successAlert{
+        h1{
+            font-size: 1.5em;
+        }
+    }
+    .advantages{
+        h1{
+            font-size: 1.5em;
+        }
+    }
+    .ARpart{
+        h1{
+            font-size: 1.5em;
+        }
+    }
+    .modalMain{
+        .imgWrapper{
+            .actualImg{
+                max-width: 100vw;
+            }
+        }
+        .next{
+            font-size: 1.25em;
+            i{
+                padding: 8px 6px 8px 9px;
+            }
+        }
+        .prev{
+            font-size: 1.25em;
+            i{
+                padding: 8px 9px 8px 6px;
+            }
+        }
+    }
+    .modellingPart{
+        h1{
+            font-size: 1.5em;
+        }
+    }
+    footer{
+        h1{
+            font-size: 1.5em;
+        }
+        .footerFlex{
+            .footInfo{
+                .addressFlex{
+                    h2{
+                        font-size: 1.2em;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 500px) {
+    .mainCarousel{
+        .mainImg1{background-image: url('imgs/arvisual_main01_m.jpg');}
+        .mainImg2{background-image: url('imgs/arvisual_main04_m.jpg');}
+        .mainImg3{background-image: url('imgs/arvisual_main05_m.jpg');}
+    }
+    .about{
+        padding-left: 0;
+        padding-right: 0;
+        h1{
+            margin-bottom: 0;
+        }
+        .ourClients{
+            .ourClientLogo{
+                flex-basis: 50%;
+                margin-top: 30px;
+                height: 45px;
+                &:last-of-type{
+                    display: block;
+                }
+            }
+        }
+    }
+    .news{
+        margin-top: 25px;
+    }
+    .mainInfo{
+        top: 50%;
+        transform: translateY(-50%);
+        h2{
+            margin-bottom: 70px;
+        }
+        .socialBtns{
+            display: none;
+        }
+        .button{
+            display: none;
+        }
+    }
+    .mobileAction{
+        display: block;
+        position: absolute;
+        width: 100%;
+        z-index: 99;
+        top: 70%;
+        transform: translateY(-70%);
+        .buttonWrap{
+            text-align: center;
+            .button{
+                font-size: 1em;
+                background-color: $red;
+                color: white;
+                padding: 9px 25px 8px 25px;
+                text-decoration: none;
+                border-radius: 50px;
+                transition-duration: .2s;
+                &:hover{
+                    background-color: $redHover;
+                }
+                &:active{
+                    background: $redActive;
+                }
+            }
+        }
+        .socialBtns{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-top: 55px;
+            a{
+                color: white;
+                font-size: 1.7em;
+                margin: 30px 15px 0px 15px;
+                transition-duration: .2s;
+                &:hover{
+                    color: $red;
+                }
+                &:active{
+                    color: $redActive;
+                }
+                .fa-facebook-f{
+                    font-size: .9em;
+                }
+            }
+        }
+    }
+    .about{
+        padding-top: 30px;
+    }
+    .portfolio{
+        padding-top: 10px;
+        h1{
+            margin-bottom: 10px;
+        }
+        p{
+            margin-bottom: 20px;
+        }
+        .buttonWrap{
+            margin-top: 30px;
+        }
+    }
+    .calendar{
+        margin-top: 30px;
+        h1{
+            margin-bottom: 5px;
+        }
+    }
+    .custom{
+        margin-top: 40px;
+        .customText{
+            padding-top: 10px;
+            padding-bottom: 40px;
+            h1{
+                margin-bottom: 0;
+            }
+            p{
+                margin-bottom: 30px;
+            }
+        }
+    }
+    .ARpart{
+        margin-top: 30px;
+        padding-left: 0;
+        padding-right: 0;
+        h1{
+            margin-bottom: 0;
+        }
+        p{
+            margin-top: 10px;
+            padding-left: $mobile;
+            padding-right: $mobile;
+        }
+        .videoWrapper{
+            padding-bottom: 46.25%;
+            margin-top: 30px;
+            margin-bottom: 0;
+        }
+    }
+    .modellingPart{
+        padding-left: $mobile;
+        padding-right: $mobile;
+        margin-top: 35px;
+    }
+    footer{
+        .footerFlex{
+            .map{
+                height: 200px;
+                margin-top: 10px;
+                
+            }
+        }
+    }
+}
+@media only screen and (max-width: 420px) {
+    .news{
+        .newsFlexMin{
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+    }
+    .about{
+        h1{
+            font-size: 1.2em;
+        }
+    }
+    .portfolio{
+        h1{
+            font-size: 1.2em;
+        }
+    }
+    .cases{
+        h1{
+            font-size: 1.2em;
+        }
+    }
+    
+    .ARpart{
+        h1{
+            font-size: 1.2em;
+        }
+    }
+    .modellingPart{
+        h1{
+            font-size: 1.2em;
+        }
+        .modellingImages{
+            margin-bottom: 30px;
+        }
+    }
+    footer{
+        .footerFlex{
+            .map{
+                height: 150px;
+                margin-top: 10px;   
+            }
+            .footInfo{
+                margin-top: 10px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 375px) {
+    .mainInfo{
+        h1{
+            font-size: 2em;
+        }
+        h2{
+            display: none;
+            font-size: 1em;
+        }
+        .h2hide{
+            display: block;
+        }
+    }
+}

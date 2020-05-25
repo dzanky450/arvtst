@@ -1,0 +1,86 @@
+.containerz{
+    padding-left: 16%;
+    padding-right: 16%;
+    .flexMain{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .flexUnit{
+            background: white;
+            flex-basis: 30%;
+            min-height: 200px;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: -2px 2px 20px rgba($color: #000000, $alpha: .16);
+            .text{
+                color: gray;
+                padding: 10px 15px;
+                transition-duration: .25s;
+                &:hover{
+                    cursor: pointer;
+                    color: #bfbfbf;
+                }
+            }
+            .success{
+                animation-duration: .5s;
+                animation-fill-mode: both;
+                animation-iteration-count: 1;
+                animation-name: wobble;
+                @keyframes wobble {
+                    0% {transform: translateX(0%);}
+                    15% {transform: translateX(-10%) rotate(-4deg);}
+                    30% {transform: translateX(7%) rotate(3deg);}
+                    45% {transform: translateX(-5%) rotate(-3deg);}
+                    60% {transform: translateX(7%) rotate(2deg);}
+                    75% {transform: translateX(-2.5%) rotate(-1deg);}
+                    100% {transform: translateX(0%);}
+                  }
+            }
+            .deleteBtn{
+                float: right;
+                padding-right: 10px;
+                margin-top: -32px;
+                z-index: 99999;
+            }
+        }
+    }
+    //add new text
+    .addNewText{
+        margin-top: 50px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        label{
+            font-weight: bold;
+            font-size: 1.4em;
+        }
+        textarea{
+            resize: none;
+            max-width: 400px;
+            min-height: 120px;
+            margin: 10px auto;
+        }
+        button{
+            max-width: 90px;
+            margin: 10px auto;
+            .material-icons{
+                font-size: 1.35em;
+            }
+        }
+    }
+}
+//tooltip - copied!
+.tooltip{
+    opacity: 0;
+    font-size: .85em;
+    position: absolute;
+    background: #00d1b2;
+    box-shadow: -2px 2px 20px rgba($color: #000000, $alpha: .16);
+    color: white;
+    max-width: 100px;
+    border-radius: 3px;
+    padding: 5px 10px 4.5px 10px;
+    transition-duration: .5s;
+}

@@ -1,0 +1,57 @@
+@import 'mainstyle';
+
+//variables
+$desktop: 10%;
+$mobile: 6%;
+$red: #e50872;
+$redHover: #ee3991;
+$redActive: #c50562;
+$lightGrey: #ededed;
+
+.nav{
+    background-color: black;
+}
+
+//portfolio section
+.portfolio{
+    margin-bottom: 50px;
+    padding-top: 80px;
+    padding-left: 0;
+    padding-right: 0;
+    section{
+        display: flex;
+        flex-direction: row;
+        .pictures{
+            flex-basis: 50%;
+            &:first-of-type{
+                padding-right: 3.5px;
+            }
+            &:last-of-type{
+                padding-left: 3.5px;
+            }
+            img{
+                max-width: 100%;
+                transition-duration: .2s;
+                &:hover{
+                    transform: translateY(-10px);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 750px) {
+    .portfolio{
+        section{
+            flex-direction: column;
+            .pictures{
+                &:first-of-type{
+                    padding-right: 0px;
+                }
+                &:last-of-type{
+                    padding-left: 0px;
+                }
+            }
+        }
+    }
+}
